@@ -54,7 +54,6 @@ class ErrorHandling:
         return
 
     def exit(self, message):
-        # print('Exit: ' + message)
         self.file.write('Exit: ' + message + '\n')
         self.file.close()
         raise SystemExit('Exit: ' + message + '\n')
